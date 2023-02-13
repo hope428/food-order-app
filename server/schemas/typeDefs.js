@@ -9,6 +9,10 @@ const typeDefs = gql`
         image: String
     }
 
+    type Query {
+        allMenuItems: [MenuItem]
+    }
+
 `
 
 module.exports = typeDefs;
