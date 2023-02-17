@@ -5,6 +5,7 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import "./App.css";
+import Navbar from "./components/Navbar";
 import Menu from "./pages/Menu";
 
 const client = new ApolloClient({
@@ -16,6 +17,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+      <Navbar/>
       <main>
         <Menu />
       </main>

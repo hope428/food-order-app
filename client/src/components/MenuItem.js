@@ -11,7 +11,7 @@ export default function MenuItem({ item }) {
       <h1>{item.name}</h1>
       <p>{item.description}</p>
       <div className="buttons">
-        <button className="qtyBtn">- 1 +</button>
+        <button className="qtyBtn"><span>-</span> 0 <span>+</span></button>
         <button onClick={addToCart}>
           Add to cart - ${item.price.toFixed(2)}
         </button>

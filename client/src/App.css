@@ -1,6 +1,26 @@
 body {
   background-color: rgb(92, 242, 250);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background-color: rgb(33, 72, 177);
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ol {
+  display: flex;
+  margin-top: 0;
+  list-style: none;
+  height: 3rem;
+  align-items: center;
+  color: white;
+}
+
+li {
+  padding: 1rem;
+  font-size: 3.2rem;
 }
 
 .menu {
@@ -9,7 +29,7 @@ body {
   flex-wrap: wrap;
   border: 5px solid rgb(255, 253, 249);
   width: 90%;
-  margin: 5rem auto;
+  margin: 2rem auto;
   border-radius: 12px;
   background-color: rgb(147, 210, 171);
   padding: 1rem;
@@ -64,14 +84,23 @@ body {
   border: 2px solid black;
 }
 
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
 
-@media screen and (min-width: 768px){
+button:active {
+  box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
   .card {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
   .card {
     width: 29%;
   }
