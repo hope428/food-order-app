@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Card";
+import { useStoreContext } from "../utils/GlobalState";
+import { UPDATE_CART_QUANTITY, ADD_TO_CART } from "../utils/actions";
 
 export default function MenuItem({ item }) {
+  const [state, dispatch] = useStoreContext();
+  const [amtInCart, setAmtInCart] = useState(0);
+
   const addToCart = () => {
-    console.log(`Item ${item._id} has been added to your cart`);
+    dispatch({
+      type: ADD_TO_CART,
+      product: { ...item, quantity: amtInCart },
+    });
+    console.log(state.cart);
+  };
+
+  const increment = () => {
+    setAmtInCart((prevAmt) => prevAmt + 1);
+  };
+
+  const decrement = () => {
+    if (amtInCart > 0) {
+      setAmtInCart((prevAmt) => prevAmt - 1);
+    }
   };
 
   return (
@@ -11,9 +30,15 @@ export default function MenuItem({ item }) {
       <h1>{item.name}</h1>
       <p>{item.description}</p>
       <div className="buttons">
-        <button className="qtyBtn"><span>-</span> 0 <span>+</span></button>
+        <button className="qtyBtn">
+          <span onClick={decrement}>-</span> {amtInCart}{" "}
+          <span onClick={increment}>+</span>
+        </button>
         <button onClick={addToCart}>
-          Add to cart - ${item.price.toFixed(2)}
+          Add to cart - $
+          {amtInCart > 0
+            ? (item.price * amtInCart).toFixed(2)
+            : item.price.toFixed(2)}
         </button>
       </div>
     </Card>
