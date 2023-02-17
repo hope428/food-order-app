@@ -7,6 +7,7 @@ import {
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Menu from "./pages/Menu";
+import { StoreProvider } from "./utils/GlobalState";
 
 const client = new ApolloClient({
   uri: "http://localhost:3001/graphql",
@@ -17,9 +18,11 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Navbar/>
+      <Navbar />
       <main>
-        <Menu />
+        <StoreProvider>
+          <Menu />
+        </StoreProvider>
       </main>
     </ApolloProvider>
   );
