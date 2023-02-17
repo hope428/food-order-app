@@ -1,33 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MenuItem from "../components/MenuItem";
+import { useQuery } from "@apollo/client";
+import { QUERY_MENU } from "../utils/queries";
 
 export default function Menu() {
-  const tempData = [
-    {
-      _id: 1,
-      name: "Burger",
-      description: "lorem ipsum dolor",
-      price: 7.99,
-    },
-    {
-      _id: 2,
-      name: "Sushi",
-      description: "lorem ipsum dolor",
-      price: 10.99,
-    },
-    {
-      _id: 3,
-      name: "Fried chicken",
-      description: "lorem ipsum dolor",
-      price: 5.99,
-    },
-  ];
+  const { data, loading, error } = useQuery(QUERY_MENU);
+
+  if (loading) return <h1>Loading now...</h1>;
+
+  if (error) {
+    return <h1>{error.message}</h1>;
+  }
 
   return (
     <div className="menu">
-      {tempData.map((item) => (
+      {data.allMenuItems.map((item) => (
         <MenuItem key={item._id} item={item} />
       ))}
+      <h1>Our menu</h1>
     </div>
   );
 }

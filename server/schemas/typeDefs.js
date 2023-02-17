@@ -13,6 +13,6 @@ const typeDefs = gql`
         allMenuItems: [MenuItem]
     }
 
-`
+`;
 
 module.exports = typeDefs;
