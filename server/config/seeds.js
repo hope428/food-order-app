@@ -8,31 +8,35 @@ db.once('open', async () => {
         {
             name: 'Glazed Donut',
             description: 'Delicious fried sweet treat',
-            image: 'https://banner2.cleanpng.com/20180822/olu/kisspng-japanese-cuisine-sushi-onigiri-pixel-art-food-pixel-sushi-www-pixshark-com-images-galleries-wi-5b7e0085213d96.6605428915349843251362.jpg',
+            image: 'https://plus.unsplash.com/premium_photo-1670333242665-30b397067c37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
             price: 1.98,
 
         }, 
         {
             name: 'Cheeseburger',
             description: 'Juicy burger...yum!',
+            image: 'https://images.unsplash.com/photo-1618219878829-8afd92751bed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
             price: 7.99,
 
         }, 
         {
             name: 'Sushi',
             description: 'Authentic Japanese Sushi',
+            image: 'https://images.unsplash.com/photo-1563612116625-3012372fccce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=882&q=80',
             price: 11.98,
 
         }, 
         {
             name: 'Fried chicken sandwich',
             description: 'Super crispy, greasy fried chicken on a brioche bun',
+            image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
             price: 7.50,
 
         }, 
         {
             name: 'Green Lucky Iced Coffee',
             description: 'Green Lucky brand iced coffee with cream and sugar.',
+            image: 'https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=828&q=80',
             price: 1.00
 
         }, 

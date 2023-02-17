@@ -28,6 +28,7 @@ export default function MenuItem({ item }) {
   return (
     <Card>
       <h1>{item.name}</h1>
+      <img src={item.image}/>
       <p>{item.description}</p>
       <div className="buttons">
         <button className="qtyBtn">
