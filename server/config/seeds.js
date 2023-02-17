@@ -8,6 +8,7 @@ db.once('open', async () => {
         {
             name: 'Glazed Donut',
             description: 'Delicious fried sweet treat',
+            image: 'https://banner2.cleanpng.com/20180822/olu/kisspng-japanese-cuisine-sushi-onigiri-pixel-art-food-pixel-sushi-www-pixshark-com-images-galleries-wi-5b7e0085213d96.6605428915349843251362.jpg',
             price: 1.98,
 
         }, 

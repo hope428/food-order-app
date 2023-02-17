@@ -14,10 +14,10 @@ export default function Menu() {
 
   return (
     <div className="menu">
+      <h1>Our menu</h1>
       {data.allMenuItems.map((item) => (
         <MenuItem key={item._id} item={item} />
       ))}
-      <h1>Our menu</h1>
     </div>
   );
 }
