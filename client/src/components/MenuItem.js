@@ -9,9 +9,13 @@ export default function MenuItem({ item }) {
   return (
     <Card>
       <h1>{item.name}</h1>
-      <p>{item.price}</p>
       <p>{item.description}</p>
-      <button onClick={addToCart}>Add to cart</button>
+      <div className="buttons">
+        <button className="qtyBtn">- 1 +</button>
+        <button onClick={addToCart}>
+          Add to cart - ${item.price.toFixed(2)}
+        </button>
+      </div>
     </Card>
   );
 }
