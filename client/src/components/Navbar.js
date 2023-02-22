@@ -1,6 +1,8 @@
 import React from "react";
 import { useStoreContext } from "../utils/GlobalState";
 import { TOGGLE_CART } from "../utils/actions";
+import Cart from "./Cart";
+import {Link} from "react-router"
 
 export default function Navbar() {
 
@@ -13,6 +15,7 @@ export default function Navbar() {
   }
 
   return (
+    <>
     <nav>
       <ol>
         <li>
@@ -26,5 +29,7 @@ export default function Navbar() {
         </li>
       </ol>
     </nav>
+    {state.cartOpen ? <Cart/> : ""}
+    </>
   );
 }

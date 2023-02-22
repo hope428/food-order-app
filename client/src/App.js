@@ -7,6 +7,7 @@ import {
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Menu from "./pages/Menu";
+import Cart from "./components/Cart";
 import { StoreProvider } from "./utils/GlobalState";
 
 const client = new ApolloClient({
@@ -16,6 +17,7 @@ const client = new ApolloClient({
 });
 
 function App() {
+
   return (
     <ApolloProvider client={client}>
       <StoreProvider>
