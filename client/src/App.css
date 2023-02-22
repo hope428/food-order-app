@@ -1,5 +1,6 @@
 body {
   background-color: rgb(92, 242, 250);
+  /* background-color: rgb(147, 210, 171); */
   font-family: "Roboto", sans-serif;
 }
 
@@ -27,11 +28,11 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 5px solid rgb(255, 253, 249);
+  /* border: 5px solid rgb(255, 253, 249); */
   width: 90%;
   margin: 2rem auto;
   border-radius: 12px;
-  background-color: rgb(147, 210, 171);
+  /* background-color: rgb(147, 210, 171); */
   padding: 1rem;
   gap: 1rem;
   justify-content: center;

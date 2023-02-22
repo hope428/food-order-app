@@ -30,6 +30,12 @@ export const reducer = (state, action) => {
         }),
       };
 
+    case TOGGLE_CART: 
+      return {
+        ...state,
+        cartOpen: !state.cartOpen
+      }
+
     default:
       return state;
   }
