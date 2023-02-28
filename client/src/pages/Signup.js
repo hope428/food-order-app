@@ -29,6 +29,7 @@ export default function Signup() {
       },
     });
     setFormState({ username: "", password: "" });
+    window.location.assign('/')
   };
 
   //handles typing in username and pw form fields
