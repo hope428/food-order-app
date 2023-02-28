@@ -13,6 +13,7 @@ import { StoreProvider } from "./utils/GlobalState";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Signup from "./pages/Signup";
 
+
 const client = new ApolloClient({
   uri: "http://localhost:3001/graphql",
   connectToDevTools: true,
