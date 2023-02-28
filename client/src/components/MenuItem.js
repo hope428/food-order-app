@@ -8,27 +8,31 @@ export default function MenuItem({ item }) {
   const [amtInCart, setAmtInCart] = useState(0);
 
   const addToCart = () => {
-    dispatch({
-      type: ADD_TO_CART,
-      product: { ...item, quantity: amtInCart },
-    });
-    console.log(state.cart);
+    if (amtInCart > 0) {
+      dispatch({
+        type: ADD_TO_CART,
+        product: { ...item, quantity: amtInCart },
+      });
+      console.log(state.cart);
+    }
   };
 
   const increment = () => {
     setAmtInCart((prevAmt) => prevAmt + 1);
+    console.log(amtInCart);
   };
 
   const decrement = () => {
     if (amtInCart > 0) {
       setAmtInCart((prevAmt) => prevAmt - 1);
+      console.log(amtInCart);
     }
   };
 
   return (
     <Card>
       <h1>{item.name}</h1>
-      <img src={item.image}/>
+      <img src={item.image} />
       <p>{item.description}</p>
       <div className="buttons">
         <button className="qtyBtn">

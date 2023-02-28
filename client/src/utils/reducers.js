@@ -20,7 +20,7 @@ export const reducer = (state, action) => {
         ...state,
         cart: state.cart.map((item) => {
           if (item._id === action._id) {
-            if(item.quantity){
+            if(item.quantity > 0){
                 item.quantity++
             } else {
                 item.quantity = 1
