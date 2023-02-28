@@ -1,11 +1,13 @@
 body {
-  background-color: rgb(92, 242, 250);
+  /* background-color: rgb(92, 242, 250); */
   /* background-color: rgb(147, 210, 171); */
+  background-color: #c774ff;
   font-family: "Roboto", sans-serif;
 }
 
 nav {
-  background-color: rgb(33, 72, 177);
+  /* background-color: rgb(33, 72, 177); */
+  background-color: #573584;
   display: flex;
   justify-content: flex-end;
 }
@@ -22,6 +24,14 @@ nav ol {
 li {
   padding: 1rem;
   font-size: 3.2rem;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover, nav li:hover {
+  text-shadow: 3px 3px black;
 }
 
 .menu {
