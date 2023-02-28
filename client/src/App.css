@@ -1,12 +1,9 @@
 body {
-  /* background-color: rgb(92, 242, 250); */
-  /* background-color: rgb(147, 210, 171); */
   background-color: #c774ff;
   font-family: "Roboto", sans-serif;
 }
 
 nav {
-  /* background-color: rgb(33, 72, 177); */
   background-color: #573584;
   display: flex;
   justify-content: flex-end;
@@ -38,11 +35,9 @@ nav a:hover, nav li:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* border: 5px solid rgb(255, 253, 249); */
-  width: 90%;
-  margin: 2rem auto;
+  /* width: 100%; */
+  /* margin: 2rem auto; */
   border-radius: 12px;
-  /* background-color: rgb(147, 210, 171); */
   padding: 1rem;
   gap: 1rem;
   justify-content: center;
@@ -128,6 +123,7 @@ img {
 label {
   color: rgb(226, 206, 230);
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 input {
@@ -144,12 +140,12 @@ input {
 
 @media screen and (min-width: 768px) {
   .card {
-    width: 50%;
+    width: 40%;
   }
 }
 
 @media screen and (min-width: 992px) {
   .card {
-    width: 29%;
+    width: 28%;
   }
 }
